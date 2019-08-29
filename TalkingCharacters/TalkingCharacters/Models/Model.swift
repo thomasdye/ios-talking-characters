@@ -17,6 +17,8 @@ extension Int {
     }
 }
 
+// Model.shared
+
 class Model {
     static let shared = Model()
     private init() {}
@@ -37,11 +39,25 @@ class Model {
     
     func image(for character: Animation) -> UIImage {
         // RETURN THE 000 IMAGE FOR THE GIVEN CHARACTER HERE
-        return characters.000
+        
+        let currentCharacter =
+        "\(character.rawValue)000"
+        
+        guard let image = UIImage(named: currentCharacter) else { fatalError("unable to conver image") }
+        return image
     }
     
     func cells(for character: Animation) -> [UIImage] {
         // RETURN AN ARRAY OF IMAGES FOR THE GIVEN CHARACTER HERE
+        guard let imageCount = cellCounts[character] else { return [] }
+        var imageArray: [UIImage] = []
         
+        for i in 0 ... imageCount {
+            let name = "\(character.rawValue)\(i.stringPadded(to: 3))"
+            guard let image = UIImage(named: name) else { fatalError() }
+            imageArray.append(image)
+            
+        }
+        return imageArray
     }
 }

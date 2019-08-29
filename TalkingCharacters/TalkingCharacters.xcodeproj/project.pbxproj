@@ -11,9 +11,10 @@
 		CE8B04CE22F3C28800D3C1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8B04CC22F3C28800D3C1E9 /* Main.storyboard */; };
 		CE8B04D022F3C28A00D3C1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8B04CF22F3C28A00D3C1E9 /* Assets.xcassets */; };
 		CE8B04D322F3C28A00D3C1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE8B04D122F3C28A00D3C1E9 /* LaunchScreen.storyboard */; };
-		CE8B04E022F3C50100D3C1E9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B04DA22F3C35F00D3C1E9 /* TableViewController.swift */; };
 		CE8B04E122F3C50400D3C1E9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B04DC22F3C38300D3C1E9 /* TableViewCell.swift */; };
 		CE8B04E222F3C50700D3C1E9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B04DE22F3C3AE00D3C1E9 /* DetailViewController.swift */; };
+		CE8B04E922F3CCC300D3C1E9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B04E622F3C7E500D3C1E9 /* Model.swift */; };
+		CE8B04EB22F3CF4200D3C1E9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B04DA22F3C35F00D3C1E9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,24 +60,24 @@
 		CE8B04C722F3C28800D3C1E9 /* TalkingCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				CE8B04EA22F3CDCB00D3C1E9 /* Custom Views */,
 				CE8B04E822F3C84E00D3C1E9 /* View Controllers */,
-				CE8B04E522F3C7E000D3C1E9 /* Modal */,
-				CE8B04DC22F3C38300D3C1E9 /* TableViewCell.swift */,
-				CE8B04C822F3C28800D3C1E9 /* AppDelegate.swift */,
+				CE8B04E522F3C7E000D3C1E9 /* Models */,
 				CE8B04CC22F3C28800D3C1E9 /* Main.storyboard */,
 				CE8B04CF22F3C28A00D3C1E9 /* Assets.xcassets */,
 				CE8B04D122F3C28A00D3C1E9 /* LaunchScreen.storyboard */,
 				CE8B04D422F3C28A00D3C1E9 /* Info.plist */,
+				CE8B04C822F3C28800D3C1E9 /* AppDelegate.swift */,
 			);
 			path = TalkingCharacters;
 			sourceTree = "<group>";
 		};
-		CE8B04E522F3C7E000D3C1E9 /* Modal */ = {
+		CE8B04E522F3C7E000D3C1E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				CE8B04E622F3C7E500D3C1E9 /* Model.swift */,
 			);
-			path = Modal;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		CE8B04E822F3C84E00D3C1E9 /* View Controllers */ = {
@@ -86,6 +87,14 @@
 				CE8B04DE22F3C3AE00D3C1E9 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE8B04EA22F3CDCB00D3C1E9 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE8B04DC22F3C38300D3C1E9 /* TableViewCell.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8B04E922F3CCC300D3C1E9 /* Model.swift in Sources */,
 				CE8B04C922F3C28800D3C1E9 /* AppDelegate.swift in Sources */,
 				CE8B04E122F3C50400D3C1E9 /* TableViewCell.swift in Sources */,
-				CE8B04E022F3C50100D3C1E9 /* TableViewController.swift in Sources */,
+				CE8B04EB22F3CF4200D3C1E9 /* TableViewController.swift in Sources */,
 				CE8B04E222F3C50700D3C1E9 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

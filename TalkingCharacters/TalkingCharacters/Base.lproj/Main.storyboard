@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="j28-5u-KRo">
             <objects>
-                <tableViewController id="551-JY-18L" sceneMemberID="viewController">
+                <tableViewController id="551-JY-18L" customClass="TableViewController" customModule="TalkingCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="pZy-0E-xvl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,8 +38,8 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="tableViewCellImage" destination="z04-Dv-WlI" id="53a-CL-QdG"/>
-                                    <segue destination="u6i-VO-CXH" kind="show" id="80X-vo-DqP"/>
+                                    <outlet property="tableViewCellImage" destination="z04-Dv-WlI" id="2n2-eW-IJ1"/>
+                                    <segue destination="u6i-VO-CXH" kind="show" identifier="ShowCharacterSegue" id="80X-vo-DqP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="551-JY-18L" id="lx8-pr-842"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="UrJ-PS-zgP"/>
+                    <navigationItem key="navigationItem" id="UrJ-PS-zgP"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6t-O3-YOV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -82,10 +82,6 @@
                             <constraint firstItem="yYy-7O-6UT" firstAttribute="top" secondItem="qhT-9l-2nQ" secondAttribute="bottom" constant="96" id="yEQ-zh-stb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EVx-rk-TWC"/>
-                        <connections>
-                            <outlet property="detailViewImage" destination="yYy-7O-6UT" id="Ha8-Pe-gQX"/>
-                            <outlet property="talkingCharacterLabel" destination="qhT-9l-2nQ" id="3g7-up-1TT"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="detailViewImage" destination="yYy-7O-6UT" id="Cvt-z2-Jte"/>
